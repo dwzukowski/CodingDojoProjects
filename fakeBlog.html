@@ -1,0 +1,98 @@
+<!-- Create a fake blog using only HTML. Your blog can be about anything! 
+Your hobbies, your favorite sports team/player, your favorite tv show, etc. 
+Your blog can look however you want it to look, but your document should use the 
+following tags at the least:
+
++HTML +head, +title, +meta +description,  +body, +div, +a, +p, +h1, +ul, +li, 
+table (including thead, td, tbody, tr) 
+
+At the bottom of the page, create a fake survey form that uses the following tags:
++form, +select,+ input type="text", input type="checkbox", input type="radio", 
++input type="submit". -->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Project 500 Blog </title>
+        <meta name="description" content="Project 500 works with Washington DC government agencies and leaders to reduce barriers for entrepreneurs">  
+    </head>
+    <body style="background-color: #d8d8d4;"> 
+        <h1> Project 500 Blog </h1>
+        <h2> Who We Are and What We Do </h2> 
+        <h3> May 22, 2017 </h3>
+        <div id="mainBody">
+        <p> Based on feedback from <a href="http://venturedc.com/"> Venture DC</a> 2015 – participants, partners and entrepreneurs - Project 500 was launched in April 2016. The mission of Project 500 is to support at least 500 
+            DC based businesses scale through increased revenues, staff, investment and/or social capital. Capitalizing on the historic levels of economic development activity in the nation’s
+            capital Project 500 works with businesses to help them leverage the investments being made in DC by preparing them – personally and professionally - for significant growth opportunities. 
+            The project provides hands on training, capacity building, mentoring and networking. Through the provision of training and support, with a laser focus on business and financial capacity, 
+            the program seeks to catalyze business expansion in the city, with preference for Wards 7 ad 8.
+        </p>
+        </div> 
+        <h4> Project 500 aims to help businesses </h4>
+        <ul> 
+            <li> Increase revenue </li>
+            <li> Hire additional staff </li>
+            <li> Raise capital </li>
+        </ul>
+        <br>
+        <p> Project 500 developed partnerships with the following institutions </p>
+        <table> 
+            <thead> 
+                <tr>
+                    <th> Name </th>
+                    <th> Ammount Pledged </th>
+                    <th> Date of Partnership </th> 
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td> JP Morgan Chase </td>
+                    <td> $3 Million </td>
+                    <td> Winter 2017 </td>
+                </tr>
+                <tr>
+                    <td> Capital One Bank </td>
+                    <td> $30 Thousand </td>
+                    <td> Fall 2016 </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <img src="Project500.gif" alt="Project 500 Logo">
+        <form action="process.php" method="post"> 
+            <p> Enjoyed this post?  Please take a bief survey </p>
+            <select name="fromDC">
+                <option value="DC"> I live in DC </option>
+                <option value="notDC"> I live outside DC </option>
+            </select> 
+            <br> 
+
+            <label for="hometown"> What city are you from? </label>
+            <input type="text" id="hometown" name="hometown">
+            <br>
+
+            <label for="business"> I'm interested in business </label>
+            <input type="checkbox" id="business" name="interests" value="business">  <br>
+            
+            <label for="venture"> I'm interested in Venture Capital </label>
+            <input type="checkbox" id="venture" name="interests" value="venture">  <br>
+            
+            <label for="impact"> I'm interested in impact investing </label>
+            <input type="checkbox" id="impact" name="interests" value="impact">  <br>
+            <br>
+
+            <p> Are you interested in future blog posts? </p>
+            <label for="veryInterested"> Very interested </label>
+            <input type="radio" id="veryInterested" name="blogInterest" value="veryInterested">
+            
+            <label for="somewhatInterested"> Somewhat interested </label>
+            <input type="radio" id="somewhatInterested" name="blogInterest" value="somewhatInterested">
+
+            <label for="notInterested"> I'm not interested </label>
+            <input type="radio" id="notInterested" name="blogInterest" value="notInterested"> 
+            <br>
+            <input type="submit" value="submit"> 
+        </form>
+    </body>
+</html>

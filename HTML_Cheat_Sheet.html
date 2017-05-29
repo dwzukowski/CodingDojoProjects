@@ -1,0 +1,99 @@
+<!-- HTML Cheat Sheet -->
+
+<!-- all HTML docs need these tags --> 
+<!DOCTYPE HTML>
+<html lang="en"> 
+    <head> </head>
+    <body> </body>
+</html>
+
+<!-- Head --> 
+
+    <head> 
+        <meta charset="utf-8">
+        <title> TITLE </title>
+        <meta name="description" content="A brief description useful to search engines">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+    </head> 
+
+Sample Setup 
+<!DOCTYPE HTML>
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8">
+        <title>The Internet Assignment</title>
+        <meta name="description" content="This is the CodingDojo Internet assignment">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+    </head> 
+    <body> 
+        <div class="wrapper"> 
+        <div class="header"> </div> <!-- end header --> 
+        <div class="sidebar"> </div> <!-- end sidebar --> 
+        <div class="main"> </div> <!-- end main --> 
+        <div class="footer"> </div> <!-- end footer --> 
+        </div> <!-- end wrapper --> 
+    </body>
+</html> 
+
+
+<!-- Body -->
+    </body> 
+    <!-- Header --> 
+        <h1> Header </h1>  <!-- h1 through h6 allowed -->
+    <!-- Paragraph --> 
+        <p> Paragraph </p>
+    <!-- Image --> 
+        <img src="imagesource" alt="display something if imagine won't load"> 
+    <!-- Link --> 
+        <a href="http://codingdojo.com"> This is a link </a> 
+    <!-- Table -->
+        <table> 
+            <thead> 
+                <tr> 
+                    <th> COLUMN 1 </th>
+                    <th> COLUMN 2 </th>
+                    <th> COLUMN 3 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr> 
+                    <td> ROW1 COLUMN 1 </td>   <!-- # <th> must match # <td> -->
+                    <td> ROW1 COLUMN 2 </td> 
+                    <td> ROW2 COLUMN 3 </td>  
+                </tr>
+                <tr> 
+                    <td> ROW2 COLUMN 1 </td>
+                    <td> ROW2 COLUMN 2 </td>
+                    <td> ROW2 COLUMN 3 </td> 
+                </tr>
+            </tbody>
+        </table>
+    <!-- Ordered List --> 
+        <ol> 
+            <li> ITEM 1 </li> 
+            <li> ITEM 2 </li>
+            <li> ITEM 3 </li>
+        </ol>
+    <!-- Unordered List --> 
+        <ul> 
+            <li> ITEM </li>
+            <li> ITEM </li>
+            <li> ITEM </li>
+        </ul>
+    <!-- Forms with various inputs --> 
+        <form action="process.php" method="post">   <!-- two methods: post & get.  Must not use get for sensitive info because it will display in address field --> 
+        <!-- Text  --> 
+            <label for="firstName"> First Name </label>     <!-- Make sure for and id attributes match, but do not repeat id attribute names in other inputs --> 
+            <input type="text" id="firstName" name="firstName" value="firstName"> 
+
+        <!-- Textarea -->
+            <textarea name="textAreaSubject"> </textarea> 
+        <!-- Radio -->     <!-- Choose one from a series of items --> 
+            <label for="male"> Male </label>
+            <input type="radio" id="male" name="gender" value="male"> 
+            <label for="female"> Female </label> 
+            <input type="radio" id="female" name="gender" value="female"
+
+        </form>
+
+    </body> 
