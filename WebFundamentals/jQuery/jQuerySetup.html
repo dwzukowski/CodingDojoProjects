@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8">
+        <title>jQuery Setup</title>
+        <meta name="description" content="This is the CodingDojo assignment">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("[tag]").method (function(){
+                    some code here  
+                }) 
+            })
+        
+        
+        
+        
+        </script> <!-- end jQuery-->  
+    
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    </head>  
+    <body> 
+        <div class="wrapper"> 
+        <div class="header"> </div> <!-- end header --> 
+        <div class="sidebar"> </div> <!-- end sidebar --> 
+        <div class="main"> </div> <!-- end main --> 
+        <div class="footer"> </div> <!-- end footer --> 
+        </div> <!-- end wrapper --> 
+    </body>
+</html> 
+
+<!-- Study only these tags!
+Effects (functions to do some cool animation effects)
+.hide()
+        simplest way to hide things; equivalent to css display: none
+        parameters can be added to change speed or a variety of other things
+.show()
+        similar to hide, but shows things. 
+.toggle()
+        toggle between hide and show
+.slideDown()
+        animates the height of elements. Causes lower parts to slide down making way for revealed items. 
+.slideToggle()
+        display or hide elements with a sliding motion
+.slideUp()
+        hide elements with sliding motion
+.fadeOut()
+        Hide elements by fading them to transparent
+.fadeIn()
+        Display matched elements by fading them to opaque
+
+CSS (adding or removing a class for any HTML element/DOM)
+.addClass()
+        Adds specified class to all matching elements; does not replace a class, simply adds one
+.removeClass()
+        If no parameter passed, all classes removed; If parameter passed, will only remove that class or classes
+.css()
+        GET css property values or SET css properties for matched elements
+
+Manipulation (retrieving or setting value or text in any HTML element)
+.after()
+        insert content, specified by parameter, after each matched element
+.append()
+        insert content as the last child of each matched element
+.prepend()
+        insert content as the first childe of matched
+.attr()
+    GET value of attribute for first element in set of matched elements; or SET one or more attributes for every matched element
+.before()
+        insert content, specified by parameter, before each element in the set of matched elements
+.html()
+        GET html content of first element in set of matched elements; or SET html content of every matched element
+.text()
+        GET combined text content of each element in set of matched elements; or SET the text cotents of matched elements
+.val()
+        GET current value of the first element in set of matched elements; or SET the value of every matched element 
+
+Events (functions to handle an event)
+.click()
+        trigger event on an element when clicked
+.on()
+        attach an event handler function for one or more events to the selected elements
+.live() - deprecated (JQuery 1.7)
+.hover()
+        trigger event when mouse pointer enters and leaves the element
+--> 

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <title> jQuery Basics</title>
+        <meta name="description" content="This is the basics of jQuery">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".logo").hover(function(){
+                    $(this).attr("src","images/cat.jpg");
+                },
+                function(){
+                    $(this).attr("src","images/logo.png");                
+                });  
+                $(".hideLogo").click(function(){
+                    $(this).hide();
+                });
+
+                $("#showCat").click(function(){
+                    $(".cat").show();
+                });
+                $("#toggle").click(function(){
+                    $(".toggleCat").toggle();
+                });
+                $("#slideDownDivButton").click(function(){
+                    $("#slideDiv1").slideDown("slow");
+                });
+                $("#danySlide").click(function(){
+                    $("#dany").slideToggle("slow");
+                });
+                $("#clickTofade").click(function(){
+                    $("#fade1").fadeIn("slow", function(){
+                        $("#fade2").fadeIn("slow");
+                    });
+                });
+
+            });   
+        </script> <!-- end jQuery-->
+    </head>
+    <body> 
+        <div class="wrapper"> 
+            <div class="header">
+                <h1 class="text"> jQuery Basics</h>
+            </div class="header">
+            <div> 
+                <h3 class="text"> .attr</h3>
+                <p class="text"> .attr changes the specified attribute of a targeted element.  In this example we change the src for an image. </p>
+                <img class="logo" src="images/logo.png" alt="site logo"> 
+            </div>
+            <div> 
+                <h3 class="text"> .hide</h3>
+                <p class="text"> .hide changes the specified attribute of a targeted element. Click on the logo to hide it. </p>
+                <img class="hideLogo" src="images/logo.png" alt="site logo"> 
+            </div>
+            <div> 
+                <h3 class="text"> .show</h3>
+                <button id="showCat" type="button"> Show me a cat! </button>
+                <img class="cat" src="images/cat.jpg" alt="cat"> 
+            </div>     
+            <div> 
+                <h3 class="text"> .toggle</h3>
+                <button id="toggle" type="button"> Toggle Cats! </button>
+                <img class="toggleCat toggleCat1" src="images/cat.jpg" alt="cat">
+                <img class="toggleCat toggleCat2" src="images/cat2.jpg" alt="cat2">  
+            </div>     
+            <div> 
+                <h3 class="text"> .slideDown</h3>
+                <button id="slideDownDivButton" type="button"> Click Here! </button>
+                <div id="slideDiv1"></div>
+            </div>
+            <div> 
+                <h3 class="text"> .slideToggle</h3>
+                <button id="danySlide" type="button"> Slide Toggle Here </button>
+                <img id="dany" src="images/dany.jpg" alt="Mother of Dragons">
+            </div> 
+            <div> 
+                <h3 class="text"> .fadeIn</h3>
+                <p id="clickTofade"> Click anywhere within this span of text</p>
+                <div id="fade1"> </div>
+                <div id="fade2"> </div>
+            </div>      
+        </div> <!-- end wrapper --> 
+    </body>
+</html> 
